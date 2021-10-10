@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"CCC",
+		"CDC",
+		"CCC"
+	],
+	
+	"key":
+	{
+		"D": { "item": "forge:materials/obxidian_dust" },
+		"C": { "item": "oresplus:enpowered_crystal_shard" }
+	},
+	
+	"result": { "item": "oresplus:enpowered_obxidian_dust" },
+	"count": 1
+}

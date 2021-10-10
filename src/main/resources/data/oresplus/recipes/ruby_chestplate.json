@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"R R",
+		"RRR",
+		"RRR"
+	],
+	
+	"key":
+	{
+		"R": { "item": "oresplus:ruby" }
+	},
+	
+	"result": { "item": "oresplus:ruby_chestplate" },
+	"count": 1
+}

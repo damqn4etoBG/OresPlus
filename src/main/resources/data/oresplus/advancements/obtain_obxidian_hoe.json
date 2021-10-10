@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "display": {
+    "icon": {
+      "item": "oresplus:enpowered_obxidian_hoe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Even More Serious Dedication",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Obtain an Enpowered Obxidian Hoe",
+      "color": "green"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "criteria": {
+    "netherite_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "oresplus:enpowered_obxidian_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_hoe"
+    ]
+  ]
+}

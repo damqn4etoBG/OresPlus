@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"RRR",
+		"R R"
+	],
+	
+	"key":
+	{
+		"R": { "item": "oresplus:ruby" }
+	},
+	
+	"result": { "item": "oresplus:ruby_helmet" },
+	"count": 1
+}

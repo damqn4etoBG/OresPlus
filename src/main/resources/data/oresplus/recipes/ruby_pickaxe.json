@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"RRR",
+		" S ",
+		" S "
+	],
+	
+	"key":
+	{
+		"R": { "item": "oresplus:ruby" },
+		"S": { "item": "minecraft:stick" }
+	},
+	
+	"result": { "item": "oresplus:ruby_pickaxe" },
+	"count": 1
+}

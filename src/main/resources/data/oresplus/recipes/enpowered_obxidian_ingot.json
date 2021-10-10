@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"DDD",
+		"DDD",
+		"DDD"
+	],
+	
+	"key":
+	{
+		"D": { "item": "oresplus:enpowered_obxidian_dust" }
+	},
+	
+	"result": { "item": "oresplus:enpowered_obxidian_ingot" },
+	"count": 1
+}

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"OG"
+	],
+	
+	"key":
+	{
+		"O": { "item": "minecraft:obsidian" },
+		"G": { "item": "minecraft:glowstone_dust" }
+	},
+	
+	"result": { "item": "oresplus:obxidian_dust" },
+	"count": 1
+}
