@@ -43,7 +43,7 @@ public class FusionCrafterTile extends TileEntity {
     }
 
     private ItemStackHandler createHandler() {
-        return new ItemStackHandler(2) {
+        return new ItemStackHandler(3) {
             @Override
             protected void onContentsChanged(int slot) {
                 markDirty();
@@ -55,6 +55,8 @@ public class FusionCrafterTile extends TileEntity {
                     case 0:
                         return stack.getItem() == Items.WATER_BUCKET;
                     case 1:
+                        return stack.getItem() == ModItems.RUBY.get();
+                    case 2:
                         return stack.getItem() == ModItems.ALUMINIUM_INGOT.get();
                     default:
                         return false;
@@ -86,5 +88,22 @@ public class FusionCrafterTile extends TileEntity {
         }
 
         return super.getCapability(cap, side);
+    }
+
+
+
+    public void lightningHasStruck() {
+        boolean hasFocusOnFirstSlot = this.itemHandler.getStackInSlot(0).getCount() > 0
+                && this.itemHandler.getStackInSlot(0).getItem() == Items.WATER_BUCKET;
+        boolean hasAluminiumInThirdSlot = this.itemHandler.getStackInSlot(2).getCount() > 0
+                && this.itemHandler.getStackInSlot(2).getItem() == ModItems.ALUMINIUM_INGOT.get();
+
+        if(hasFocusOnFirstSlot && hasAluminiumInThirdSlot) {
+            this.itemHandler.getStackInSlot(0).shrink(1);
+            this.itemHandler.getStackInSlot(2).shrink(1);
+
+            this.itemHandler.insertItem(1, new ItemStack(ModItems.RUBY.get()), false);
+        }
+
     }
 }

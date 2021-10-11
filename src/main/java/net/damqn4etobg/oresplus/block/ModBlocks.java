@@ -1,6 +1,7 @@
 package net.damqn4etobg.oresplus.block;
 
 import net.damqn4etobg.oresplus.OresPlus;
+import net.damqn4etobg.oresplus.block.custom.FusionCrafterBlock;
 import net.damqn4etobg.oresplus.item.ModItemGroup;
 import net.damqn4etobg.oresplus.item.ModItems;
 import net.minecraft.block.AbstractBlock;
@@ -32,7 +33,7 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
     public static final RegistryObject<Block> FUSION_CRAFTER = registerBlock("fusion_crafter",
-            () -> new Block(AbstractBlock.Properties.create(Material.IRON)));
+            () -> new FusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

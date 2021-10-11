@@ -1,0 +1,9 @@
+{
+	"parent":  "block/orientable",
+	"textures": 
+	{
+		"top": "oresplus:blocks/fusion_crafter_top",
+		"front": "oresplus:blocks/fusion_crafter_front",
+		"side": "oresplus:blocks/fusion_crafter_side"
+	}
+}
