@@ -1,5 +1,6 @@
 package net.damqn4etobg.oresplus.item;
 
+import net.damqn4etobg.fluid.ModFluids;
 import net.damqn4etobg.oresplus.OresPlus;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -65,6 +66,10 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
             () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET,
                     new Item.Properties().group(ModItemGroup.ORESPLUS_ARMORGROUP)));
+
+    public static final RegistryObject<Item> MOLTEN_ALUMINIUM_BUCKET = ITEMS.register("molten_aluminium_bucket",
+            () -> new BucketItem(() -> ModFluids.MOLTEN_ALUMINIUM_FLUID.get(),
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_GROUP)));
 
 
 

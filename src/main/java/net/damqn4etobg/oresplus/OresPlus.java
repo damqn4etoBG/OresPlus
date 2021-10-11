@@ -1,6 +1,7 @@
 package net.damqn4etobg.oresplus;
 
 import net.damqn4etobg.container.ModContainers;
+import net.damqn4etobg.fluid.ModFluids;
 import net.damqn4etobg.oresplus.block.ModBlocks;
 import net.damqn4etobg.oresplus.item.ModItems;
 import net.damqn4etobg.oresplus.tileentity.ModTileEntities;
@@ -8,6 +9,8 @@ import net.damqn4etobg.screen.FusionCrafterScreen;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -43,6 +46,7 @@ public class OresPlus
         ModBlocks.register(eventBus);
         ModTileEntities.register(eventBus);
         ModContainers.register(eventBus);
+        ModFluids.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -66,6 +70,11 @@ public class OresPlus
     private void doClientStuff(final FMLClientSetupEvent event) {
         ScreenManager.registerFactory(ModContainers.FUSION_CRAFTER_CONTAINER.get(),
                 FusionCrafterScreen::new);
+
+        RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_BLOCK.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_FLUID.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_FLOWING.get(), RenderType.getTranslucent());
+
 
     }
 

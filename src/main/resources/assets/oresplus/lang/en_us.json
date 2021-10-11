@@ -13,6 +13,7 @@
 	"item.oresplus.ruby_leggings": "Ruby Leggings",
 	"item.oresplus.ruby_boots": "Ruby Boots",
 	"item.oresplus.obxidian_dust": "\u00A7dObxidian Dust",
+	"item.oresplus.molten_aluminium_bucket": "Molten Aluminium Bucket",
 	"block.oresplus.ruby_ore": "Ruby Ore",
 	"block.oresplus.fusion_crafter": "Fusion Crafter",
 	"screen.oresplus.fusion_crafter": "Fusion Crafter",
@@ -26,6 +27,7 @@
 	"item.oresplus.enpowered_obxidian_shovel": "\u00A7eEnpowered Obxidian Shovel",
 	"item.oresplus.enpowered_obxidian_hoe": "\u00A7eEnpowered Obxidian Hoe",
 	"item.oresplus.aluminium_ingot": "Aluminium Ingot",
-	"block.oresplus.aluminium_ore": "Aluminium Ore"
+	"block.oresplus.aluminium_ore": "Aluminium Ore",
+	"fluid.oresplus.molten_aluminium": "Molten Aluminium"
 }
 

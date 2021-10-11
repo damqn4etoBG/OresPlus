@@ -55,7 +55,7 @@ public class FusionCrafterTile extends TileEntity {
                     case 0:
                         return stack.getItem() == Items.WATER_BUCKET;
                     case 1:
-                        return stack.getItem() == ModItems.RUBY.get();
+                        return stack.getItem() == ModItems.MOLTEN_ALUMINIUM_BUCKET.get();
                     case 2:
                         return stack.getItem() == ModItems.ALUMINIUM_INGOT.get();
                     default:
@@ -102,7 +102,7 @@ public class FusionCrafterTile extends TileEntity {
             this.itemHandler.getStackInSlot(0).shrink(1);
             this.itemHandler.getStackInSlot(2).shrink(1);
 
-            this.itemHandler.insertItem(1, new ItemStack(ModItems.RUBY.get()), false);
+            this.itemHandler.insertItem(1, new ItemStack(ModItems.MOLTEN_ALUMINIUM_BUCKET.get()), false);
         }
 
     }
