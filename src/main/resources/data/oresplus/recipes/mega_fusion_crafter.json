@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"FEF",
+		"ENE",
+		"FEF"
+	],
+	
+	"key":
+	{
+		"F": { "item": "oresplus:fusion_crafter" },
+		"E": { "item": "oresplus:enpowered_obxidian_ingot" },
+		"N": { "item": "minecraft:nether_star" }
+	},
+	
+	"result": { "item": "oresplus:mega_fusion_crafter" },
+	"count": 1
+}

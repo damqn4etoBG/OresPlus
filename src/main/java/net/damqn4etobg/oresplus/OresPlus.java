@@ -6,6 +6,9 @@ import net.damqn4etobg.oresplus.block.ModBlocks;
 import net.damqn4etobg.oresplus.item.ModItems;
 import net.damqn4etobg.oresplus.tileentity.ModTileEntities;
 import net.damqn4etobg.screen.FusionCrafterScreen;
+import net.damqn4etobg.screen.MegaFusionCrafterScreen;
+import net.damqn4etobg.world.biome.ModBiomes;
+import net.damqn4etobg.world.gen.ModBiomeGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.ScreenManager;
@@ -47,6 +50,7 @@ public class OresPlus
         ModTileEntities.register(eventBus);
         ModContainers.register(eventBus);
         ModFluids.register(eventBus);
+        ModBiomes.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -62,14 +66,16 @@ public class OresPlus
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        event.enqueueWork(() -> {
+            ModBiomeGeneration.generateBiomes();
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         ScreenManager.registerFactory(ModContainers.FUSION_CRAFTER_CONTAINER.get(),
                 FusionCrafterScreen::new);
+        ScreenManager.registerFactory(ModContainers.MEGA_FUSION_CRAFTER_CONTAINER.get(),
+                MegaFusionCrafterScreen::new);
 
         RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_BLOCK.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_FLUID.get(), RenderType.getTranslucent());

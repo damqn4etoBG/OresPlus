@@ -1,0 +1,9 @@
+{
+	"parent":  "block/orientable",
+	"textures": 
+	{
+		"top": "oresplus:blocks/purple_fungus_top",
+		"front": "oresplus:blocks/purple_fungus_front",
+		"side": "oresplus:blocks/purple_fungus_side"
+	}
+}

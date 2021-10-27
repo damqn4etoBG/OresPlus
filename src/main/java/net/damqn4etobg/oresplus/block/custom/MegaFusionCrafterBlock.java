@@ -1,12 +1,12 @@
 package net.damqn4etobg.oresplus.block.custom;
 
 import net.damqn4etobg.container.FusionCrafterContainer;
+import net.damqn4etobg.container.MegaFusionCrafterContainer;
 import net.damqn4etobg.oresplus.tileentity.FusionCrafterTile;
+import net.damqn4etobg.oresplus.tileentity.MegaFusionCrafterTile;
 import net.damqn4etobg.oresplus.tileentity.ModTileEntities;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
-import net.minecraft.client.particle.Particle;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,7 +14,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
-import net.minecraft.particles.ParticleType;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
@@ -31,9 +30,9 @@ import net.minecraftforge.fml.network.NetworkHooks;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class FusionCrafterBlock extends Block {
+public class MegaFusionCrafterBlock extends Block {
 
-    public FusionCrafterBlock(Properties properties) {
+    public MegaFusionCrafterBlock(Properties properties) {
         super(properties);
     }
 
@@ -43,7 +42,7 @@ public class FusionCrafterBlock extends Block {
             TileEntity tileEntity = worldIn.getTileEntity(pos);
 
             if(!player.isCrouching()) {
-                if(tileEntity instanceof FusionCrafterTile) {
+                if(tileEntity instanceof MegaFusionCrafterTile) {
                     INamedContainerProvider containerProvider = createContainerProvider(worldIn, pos);
 
                     NetworkHooks.openGui(((ServerPlayerEntity) player), containerProvider, tileEntity.getPos());
@@ -51,14 +50,17 @@ public class FusionCrafterBlock extends Block {
                     throw new IllegalStateException("Our Conatainer Provider is missing!");
                 }
             } else {
-                if(tileEntity instanceof FusionCrafterTile) {
-                    EntityType.LIGHTNING_BOLT.spawn(((ServerWorld) worldIn), null, player,
-                            pos, SpawnReason.TRIGGERED, true, true);
+                if(tileEntity instanceof MegaFusionCrafterTile) {
+                    if(worldIn.isThundering()) {
+                        EntityType.LIGHTNING_BOLT.spawn(((ServerWorld) worldIn), null, player,
+                                pos, SpawnReason.TRIGGERED, true, true);
 
 
 
 
-                    ((FusionCrafterTile)tileEntity).lightningHasStruck();
+                        ((MegaFusionCrafterTile)tileEntity).lightningHasStruck();
+                    }
+
                 }
             }
 
@@ -82,13 +84,13 @@ public class FusionCrafterBlock extends Block {
         return new INamedContainerProvider() {
             @Override
             public ITextComponent getDisplayName() {
-                return new TranslationTextComponent("screen.oresplus.fusion_crafter");
+                return new TranslationTextComponent("screen.oresplus.mega_fusion_crafter");
             }
 
             @Nullable
             @Override
             public Container createMenu(int i, PlayerInventory playerInventory, PlayerEntity playerEntity) {
-                return new FusionCrafterContainer(i, worldIn, pos, playerInventory, playerEntity);
+                return new MegaFusionCrafterContainer(i, worldIn, pos, playerInventory, playerEntity);
             }
         };
     }
@@ -96,7 +98,7 @@ public class FusionCrafterBlock extends Block {
     @Nullable
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return ModTileEntities.FUSION_CRAFTER_TILE.get().create();
+        return ModTileEntities.MEGA_FUSION_CRAFTER_TILE.get().create();
     }
 
     @Override

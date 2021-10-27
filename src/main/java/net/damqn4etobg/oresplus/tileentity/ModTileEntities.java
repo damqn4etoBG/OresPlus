@@ -16,6 +16,9 @@ public class ModTileEntities {
     public static RegistryObject<TileEntityType<FusionCrafterTile>> FUSION_CRAFTER_TILE =
             TILE_ENTITIES.register("fusion_crafter_tile", () -> TileEntityType.Builder.create(
                     FusionCrafterTile::new, ModBlocks.FUSION_CRAFTER.get()).build(null));
+    public static RegistryObject<TileEntityType<MegaFusionCrafterTile>> MEGA_FUSION_CRAFTER_TILE =
+            TILE_ENTITIES.register("mega_fusion_crafter_tile", () -> TileEntityType.Builder.create(
+                    MegaFusionCrafterTile::new, ModBlocks.MEGA_FUSION_CRAFTER.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         TILE_ENTITIES.register(eventBus);

@@ -6,9 +6,11 @@ import net.damqn4etobg.oresplus.item.ModItemGroup;
 import net.damqn4etobg.oresplus.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.SoundEvents;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -34,6 +36,13 @@ public class ModBlocks {
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
     public static final RegistryObject<Block> FUSION_CRAFTER = registerBlock("fusion_crafter",
             () -> new FusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
+    public static final RegistryObject<Block> MEGA_FUSION_CRAFTER = registerBlock("mega_fusion_crafter",
+            () -> new FusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
+    public static final RegistryObject<Block> PURPLE_FUNGUS = registerBlock("purple_fungus",
+            () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(1).hardnessAndResistance(0.5f).sound(SoundType.HONEY)));
+
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {

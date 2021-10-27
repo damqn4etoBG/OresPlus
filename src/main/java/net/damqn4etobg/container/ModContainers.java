@@ -23,6 +23,14 @@ public class ModContainers {
                 return new FusionCrafterContainer(windowId, world, pos, inv, inv.player);
             })));
 
+    public static final RegistryObject<ContainerType<MegaFusionCrafterContainer>> MEGA_FUSION_CRAFTER_CONTAINER
+            = CONTAINERS.register("mega_fusion_crafter_container",
+            () -> IForgeContainerType.create(((windowId, inv, data) -> {
+                BlockPos pos = data.readBlockPos();
+                World world = inv.player.getEntityWorld();
+                return new MegaFusionCrafterContainer(windowId, world, pos, inv, inv.player);
+            })));
+
 
     public static void register(IEventBus eventBus) {
         CONTAINERS.register(eventBus);
