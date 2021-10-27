@@ -8,7 +8,9 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
     RUBY(3, 500, 8f, 2f, 14,
-            () -> Ingredient.fromItems(ModItems.RUBY.get()));
+            () -> Ingredient.fromItems(ModItems.RUBY.get())),
+    ENPOWERED_OBXIDIAN(5, 2500, 15f, 5f, 20,
+                 () -> Ingredient.fromItems(ModItems.ENPOWERED_OBXIDIAN_INGOT.get()));
 
 
 

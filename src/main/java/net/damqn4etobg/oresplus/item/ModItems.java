@@ -34,21 +34,40 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
             () -> new SwordItem(ModItemTier.RUBY, (int) 3f, 3f,
                 new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_SWORD = ITEMS.register("enpowered_obxidian_sword",
+            () -> new SwordItem(ModItemTier.ENPOWERED_OBXIDIAN, (int) 3f, 3f,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
 
     public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
             () -> new PickaxeItem(ModItemTier.RUBY, (int) 0f, 3f,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
+
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_PICKAXE = ITEMS.register("enpowered_obxidian_pickaxe",
+            () -> new PickaxeItem(ModItemTier.ENPOWERED_OBXIDIAN, (int) 0f, 3f,
                     new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
 
     public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe",
             () -> new AxeItem(ModItemTier.RUBY, (int) 6f, -3f,
                     new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
 
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_AXE = ITEMS.register("enpowered_obxidian_axe",
+            () -> new AxeItem(ModItemTier.ENPOWERED_OBXIDIAN, (int) 6f, -3f,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
+
     public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
             () -> new ShovelItem(ModItemTier.RUBY, (int) 0f, 1f,
                     new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
 
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_SHOVEL = ITEMS.register("enpowered_obxidian_shovel",
+            () -> new ShovelItem(ModItemTier.ENPOWERED_OBXIDIAN, (int) 0f, 1f,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
+
     public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModItemTier.RUBY, (int) 0f, 0f,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
+
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_HOE = ITEMS.register("enpowered_obxidian_hoe",
+            () -> new HoeItem(ModItemTier.ENPOWERED_OBXIDIAN, (int) 0f, 0f,
                     new Item.Properties().group(ModItemGroup.ORESPLUS_TOOLSGROUP)));
 
     public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",

@@ -16,6 +16,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     RUBY("ruby", 33, new int[] {2, 7, 5 ,4}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2f, 0f, () -> {
         return Ingredient.fromItems(ModItems.RUBY.get());
+    }),
+    ENPOWERED_OBXIDIAN("enpowered_obxidian_ingot", 45, new int[] {4, 6, 8, 10}, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4f, 1f, () -> {
+        return Ingredient.fromItems(ModItems.ENPOWERED_OBXIDIAN_INGOT.get());
     });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
