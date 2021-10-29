@@ -1,5 +1,6 @@
 package net.damqn4etobg.oresplus;
 
+import com.google.common.collect.ImmutableMap;
 import net.damqn4etobg.container.ModContainers;
 import net.damqn4etobg.fluid.ModFluids;
 import net.damqn4etobg.oresplus.block.ModBlocks;
@@ -14,6 +15,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.item.AxeItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -67,6 +69,11 @@ public class OresPlus
     private void setup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
+
+            AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
+                    .put(ModBlocks.REDWOOD_LOG.get(), ModBlocks.STRIPPED_REDWOOD_LOG.get())
+                    .put(ModBlocks.REDWOOD_WOOD.get(), ModBlocks.STRIPPED_REDWOOD_WOOD.get()).build();
+
             ModBiomeGeneration.generateBiomes();
         });
     }

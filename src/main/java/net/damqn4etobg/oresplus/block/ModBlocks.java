@@ -2,11 +2,10 @@ package net.damqn4etobg.oresplus.block;
 
 import net.damqn4etobg.oresplus.OresPlus;
 import net.damqn4etobg.oresplus.block.custom.FusionCrafterBlock;
+import net.damqn4etobg.oresplus.block.custom.MegaFusionCrafterBlock;
 import net.damqn4etobg.oresplus.item.ModItemGroup;
 import net.damqn4etobg.oresplus.item.ModItems;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -37,10 +36,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> FUSION_CRAFTER = registerBlock("fusion_crafter",
             () -> new FusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
     public static final RegistryObject<Block> MEGA_FUSION_CRAFTER = registerBlock("mega_fusion_crafter",
-            () -> new FusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
+            () -> new MegaFusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
     public static final RegistryObject<Block> PURPLE_FUNGUS = registerBlock("purple_fungus",
             () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
                     .harvestLevel(1).hardnessAndResistance(0.5f).sound(SoundType.HONEY)));
+
+    public static final RegistryObject<Block> REDWOOD_LOG = registerBlock("redwood_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> REDWOOD_WOOD = registerBlock("redwood_wood",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> REDWOOD_PLANKS = registerBlock("redwood_planks",
+            () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves",
+            () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f)
+                    .tickRandomly().sound(SoundType.PLANT).notSolid()));
+
 
 
 

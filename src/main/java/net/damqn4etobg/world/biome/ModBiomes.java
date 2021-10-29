@@ -23,7 +23,7 @@ public class ModBiomes {
     public static final DeferredRegister<Biome> BIOMES
             = DeferredRegister.create(ForgeRegistries.BIOMES, OresPlus.MOD_ID);
 
-    public static final RegistryObject<Biome> PURPLE_FUNGUS_PLATEAU_BIOME = BIOMES.register("purple_fungus_plateu_biome",
+    public static final RegistryObject<Biome> PURPLE_FUNGUS_PLATEAU_BIOME = BIOMES.register("purple_fungus_plateau",
             () -> makePurpleFungusPlateauBiome(() -> ModConfiguredSurfaceBuilders.PURPLE_FUNGUS_PLATEAU_SURFACE, 0.125f, 0.05f));
 
     private static Biome makePurpleFungusPlateauBiome(final Supplier<ConfiguredSurfaceBuilder<?>> surfaceBuilder, float depth, float scale) {
@@ -54,8 +54,8 @@ public class ModBiomes {
         DefaultBiomeFeatures.withFrozenTopLayer(biomegenerationsettings$builder);
 
         return (new Biome.Builder()).precipitation(Biome.RainType.NONE).category(Biome.Category.PLAINS).depth(depth).scale(scale)
-                .temperature(1.5F).downfall(0.9F).setEffects((new BiomeAmbience.Builder()).setWaterColor(-120117226).setWaterFogColor(-120117226)
-                        .setFogColor(-120167255).withSkyColor(getSkyColorWithTemperatureModifier(0.8F)).withFoliageColor(-120117226).withGrassColor(-120117226)
+                .temperature(0.8F).downfall(0.9F).setEffects((new BiomeAmbience.Builder()).setWaterColor(-120117226).setWaterFogColor(-120117226)
+                        .setFogColor(-120167255).withSkyColor(getSkyColorWithTemperatureModifier(0F)).withFoliageColor(-120117226).withGrassColor(-120117226)
                         .setParticle(new ParticleEffectAmbience(ParticleTypes.PORTAL, 0.003f)).withSkyColor(-120167255)
                         .setAmbientSound(SoundEvents.AMBIENT_CRIMSON_FOREST_LOOP)
                         .setMoodSound(new MoodSoundAmbience(SoundEvents.AMBIENT_WARPED_FOREST_MOOD, 6000, 8, 2.0D))
