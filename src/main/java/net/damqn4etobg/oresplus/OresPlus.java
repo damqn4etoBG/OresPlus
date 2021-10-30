@@ -88,6 +88,11 @@ public class OresPlus
         RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_FLUID.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_FLOWING.get(), RenderType.getTranslucent());
 
+        RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_LEAVES.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
+
+        RenderTypeLookup.setRenderLayer(ModBlocks.CORN.get(), RenderType.getCutout());
+
 
     }
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "oresplus:blocks/redwood_sapling"
+  }
+}

@@ -33,7 +33,7 @@ public class ModTreeGeneration {
             base.add(() -> ModConfiguredFeatures.REDWOOD.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
                     .withPlacement(Placement.COUNT_EXTRA.configure(
-                            new AtSurfaceWithExtraConfig(4, 2f, 10))));
+                            new AtSurfaceWithExtraConfig(1, 0.25f, 2))));
         }
 
     }

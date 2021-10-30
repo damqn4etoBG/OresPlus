@@ -10,7 +10,7 @@
 	
 	"key":
 	{
-		"D": { "item": "forge:materials/obxidian_dust" },
+		"D": { "tag": "forge:materials/obxidian_dust" },
 		"C": { "item": "oresplus:enpowered_crystal_shard" }
 	},
 	

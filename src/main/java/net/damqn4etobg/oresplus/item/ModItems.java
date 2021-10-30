@@ -2,6 +2,7 @@ package net.damqn4etobg.oresplus.item;
 
 import net.damqn4etobg.fluid.ModFluids;
 import net.damqn4etobg.oresplus.OresPlus;
+import net.damqn4etobg.oresplus.block.ModBlocks;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -89,6 +90,11 @@ public class ModItems {
     public static final RegistryObject<Item> MOLTEN_ALUMINIUM_BUCKET = ITEMS.register("molten_aluminium_bucket",
             () -> new BucketItem(() -> ModFluids.MOLTEN_ALUMINIUM_FLUID.get(),
                     new Item.Properties().group(ModItemGroup.ORESPLUS_GROUP)));
+
+    public static final RegistryObject<Item> CORN = ITEMS.register("corn",
+            () -> new BlockItem(ModBlocks.CORN.get(), new Item.Properties()
+                    .food(new Food.Builder().hunger(1).saturation(0.1f).fastToEat().build())
+                    .group(ModItemGroup.ORESPLUS_FARMGROUP)));
 
 
 

@@ -29,4 +29,12 @@ public class ModItemGroup {
         }
     };
 
+    public static final ItemGroup ORESPLUS_FARMGROUP = new ItemGroup("oresplusfarmgroup") {
+        @Override
+        public ItemStack createIcon()
+        {
+            return new ItemStack(ModItems.CORN.get());
+        }
+    };
+
 }

@@ -1,8 +1,10 @@
 package net.damqn4etobg.oresplus.block;
 
 import net.damqn4etobg.oresplus.OresPlus;
+import net.damqn4etobg.oresplus.block.custom.CornBlock;
 import net.damqn4etobg.oresplus.block.custom.FusionCrafterBlock;
 import net.damqn4etobg.oresplus.block.custom.MegaFusionCrafterBlock;
+import net.damqn4etobg.oresplus.block.custom.trees.RedwoodTree;
 import net.damqn4etobg.oresplus.item.ModItemGroup;
 import net.damqn4etobg.oresplus.item.ModItems;
 import net.minecraft.block.*;
@@ -59,6 +61,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves",
             () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f)
                     .tickRandomly().sound(SoundType.PLANT).notSolid()));
+
+    public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling",
+            () -> new SaplingBlock(new RedwoodTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> CORN = BLOCKS.register("corn_crop",
+            () -> new CornBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
 
 
