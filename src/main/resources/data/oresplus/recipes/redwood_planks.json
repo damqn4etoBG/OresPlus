@@ -1,18 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    " ",
-    " ",
-    "L"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oresplus:redwood_log"
+    }
   ],
-
-  "key":
-  {
-    "L": { "item": "oresplus:redwood_log" }
-  },
-
-  "result": { "item": "oresplus:redwood_planks" },
-  "count": 4
+  "result": {
+    "item": "oresplus:redwood_planks",
+    "count": 4
+  }
 }

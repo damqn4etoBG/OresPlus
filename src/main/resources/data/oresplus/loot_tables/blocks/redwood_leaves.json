@@ -39,7 +39,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:redwood_sapling",
+              "name": "oresplus:redwood_sapling",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"

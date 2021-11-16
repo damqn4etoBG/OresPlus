@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oresplus:stripped_redwood_log"
+    }
+  ],
+  "result": {
+    "item": "oresplus:redwood_planks",
+    "count": 4
+  }
+}

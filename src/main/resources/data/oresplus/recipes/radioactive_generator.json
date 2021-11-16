@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IAI",
+    "ACA",
+    "IAI"
+  ],
+  "key": {
+    "I": {
+      "item": "oresplus:iron_casing"
+    },
+    "C": {
+      "item": "oresplus:radioactive_generator_core"
+    },
+    "A": {
+      "item": "oresplus:advanced_circuit_board"
+    }
+  },
+  "result": {
+    "item": "oresplus:radioactive_generator",
+    "count": 1
+  }
+}

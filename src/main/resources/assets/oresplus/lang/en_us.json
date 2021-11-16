@@ -4,21 +4,33 @@
 	"itemGroup.oresplustoolsgroup": "Ores+ Tools",
 	"itemGroup.oresplusarmorgroup": "Ores+ Armor",
 	"itemGroup.oresplusfarmgroup": "Ores+ Farming",
+	"itemGroup.oresplusengineeringgroup": "Ores+ Engineering",
+
 	"item.oresplus.ruby_axe": "Ruby Axe",
 	"item.oresplus.ruby_sword": "Ruby Sword",
 	"item.oresplus.ruby_pickaxe": "Ruby Pickaxe",
 	"item.oresplus.ruby_shovel": "Ruby Shovel",
 	"item.oresplus.ruby_hoe": "Ruby Hoe",
+
 	"item.oresplus.ruby_helmet": "Ruby Helmet",
 	"item.oresplus.ruby_chestplate": "Ruby Chestplate",
 	"item.oresplus.ruby_leggings": "Ruby Leggings",
 	"item.oresplus.ruby_boots": "Ruby Boots",
+
+	"item.oresplus.enpowered_obxidian_helmet": "\u00A7eEnpowered Obxidian Helmet",
+	"item.oresplus.enpowered_obxidian_chestplate": "\u00A7eEnpowered Obxidian Chestplate",
+	"item.oresplus.enpowered_obxidian_leggings": "\u00A7eEnpowered Obxidian Leggings",
+	"item.oresplus.enpowered_obxidian_boots": "\u00A7eEnpowered Obxidian Boots",
+
 	"item.oresplus.obxidian_dust": "\u00A7dObxidian Dust",
 	"item.oresplus.molten_aluminium_bucket": "Molten Aluminium Bucket",
+
 	"block.oresplus.ruby_ore": "Ruby Ore",
+	"block.oresplus.uranium_ore": "\u00A7aUranium Ore",
+	"block.oresplus.aluminium_ore": "Aluminium Ore",
+	"block.oresplus.copper_ore": "Copper Ore",
+	"block.oresplus.uranium_block": "\u00A7aUranium Block",
 	"block.oresplus.purple_fungus": "Purple Fungus",
-	"block.oresplus.fusion_crafter": "Fusion Crafter",
-	"block.oresplus.mega_fusion_crafter": "\u00A7dMega Fusion Crafter",
 	"block.oresplus.redwood_log": "Redwood Log",
 	"block.oresplus.redwood_planks": "Redwood Planks",
 	"block.oresplus.redwood_wood": "Redwood Wood",
@@ -27,8 +39,17 @@
 	"block.oresplus.redwood_leaves": "Redwood Leaves",
 	"block.oresplus.redwood_sapling": "Redwood Sapling",
 	"block.oresplus.corn_crop": "Corn",
+	"block.oresplus.tomato_crop": "Tomato",
+	"block.oresplus.iron_casing": "Iron Casing",
+
+	"block.oresplus.fusion_crafter": "Fusion Crafter",
+	"block.oresplus.mega_fusion_crafter": "\u00A7dMega Fusion Crafter",
+	"block.oresplus.radioactive_generator": "\u00A7dRadioactive Generator",
+
 	"screen.oresplus.fusion_crafter": "Fusion Crafter",
 	"screen.oresplus.mega_fusion_crafter": "Mega Fusion Crafter",
+	"screen.oresplus.radioactive_generator": "Radioactive Generator",
+
 	"block.oresplus.enpowered_crystal_ore": "\u00A7dEnpowered Crystal Ore",
 	"item.oresplus.enpowered_crystal_shard": "\u00A7dEnpowered Crystal Shard",
 	"item.oresplus.enpowered_obxidian_ingot": "\u00A7eEnpowered Obxidian Ingot",
@@ -39,7 +60,20 @@
 	"item.oresplus.enpowered_obxidian_shovel": "\u00A7eEnpowered Obxidian Shovel",
 	"item.oresplus.enpowered_obxidian_hoe": "\u00A7eEnpowered Obxidian Hoe",
 	"item.oresplus.aluminium_ingot": "Aluminium Ingot",
-	"block.oresplus.aluminium_ore": "Aluminium Ore",
-	"fluid.oresplus.molten_aluminium": "Molten Aluminium"
+	"item.oresplus.uranium_ingot": "\u00A7aUranium Ingot",
+	"item.oresplus.hammer": "Hammer",
+	"item.oresplus.iron_plate": "Iron Plate",
+	"item.oresplus.radioactive_generator_core": "\u00A7dRadioactive Generator Core",
+	"item.oresplus.circuit_board": "Circuit Board",
+	"item.oresplus.advanced_circuit_board": "\u00A7eAdvanced Circuit Board",
+
+	"fluid.oresplus.molten_aluminium": "Molten Aluminium",
+
+	"tooltip.oresplus.fusion_crafter": "Hold \u00A7eSHIFT\u00A7r for more information!",
+	"tooltip.oresplus.fusion_crafter_shift": "Put the items in the 1st and 2nd slot, then crouch-right click.",
+	"tooltip.oresplus.radioactive_generator": "Hold \u00A7eSHIFT\u00A7r for more information!",
+	"tooltip.oresplus.radioactive_generator_shift": "Generates Energy from radioactive materials.",
+	"tooltip.oresplus.hammer": "Hold \u00A7eSHIFT\u00A7r for more information!",
+	"tooltip.oresplus.hammer_shift": "Makes Plates from materials"
 }
 

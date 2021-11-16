@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UUU",
+    "UNU",
+    "UUU"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "U": {
+      "item": "oresplus:uranium_ingot"
+    }
+  },
+  "result": {
+    "item": "oresplus:radioactive_generator_core",
+    "count": 1
+  }
+}

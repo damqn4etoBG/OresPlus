@@ -3,6 +3,7 @@ package net.damqn4etobg.oresplus.item;
 import net.damqn4etobg.fluid.ModFluids;
 import net.damqn4etobg.oresplus.OresPlus;
 import net.damqn4etobg.oresplus.block.ModBlocks;
+import net.damqn4etobg.oresplus.item.custom.Hammer;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,6 +32,27 @@ public class ModItems {
 
     public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_DUST = ITEMS.register("enpowered_obxidian_dust",
             () -> new Item(new Item.Properties().group(ModItemGroup.ORESPLUS_GROUP)));
+
+    public static final RegistryObject<Item> URANIUM_INGOT = ITEMS.register("uranium_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.ORESPLUS_GROUP)));
+
+    public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer",
+            () -> new Hammer(new Item.Properties().group(ModItemGroup.ORESPLUS_ENGINEERINGGROUP).maxDamage(20)));
+
+    public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate",
+            () -> new Item(new Item.Properties().group(ModItemGroup.ORESPLUS_ENGINEERINGGROUP)));
+
+    public static final RegistryObject<Item> RADIOACTIVE_GENERATOR_CORE = ITEMS.register("radioactive_generator_core",
+            () -> new Item(new Item.Properties().group(ModItemGroup.ORESPLUS_ENGINEERINGGROUP)));
+
+    public static final RegistryObject<Item> CIRCUIT_BOARD = ITEMS.register("circuit_board",
+            () -> new Item(new Item.Properties().group(ModItemGroup.ORESPLUS_ENGINEERINGGROUP)));
+
+    public static final RegistryObject<Item> ADVANCED_CIRCUIT_BOARD = ITEMS.register("advanced_circuit_board",
+            () -> new Item(new Item.Properties().group(ModItemGroup.ORESPLUS_ENGINEERINGGROUP)));
+
+
+
 
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
             () -> new SwordItem(ModItemTier.RUBY, (int) 3f, 3f,
@@ -87,6 +109,22 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET,
                     new Item.Properties().group(ModItemGroup.ORESPLUS_ARMORGROUP)));
 
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_HELMET = ITEMS.register("enpowered_obxidian_helmet",
+            () -> new ArmorItem(ModArmorMaterial.ENPOWERED_OBXIDIAN, EquipmentSlotType.HEAD,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_ARMORGROUP)));
+
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_CHESTPLATE = ITEMS.register("enpowered_obxidian_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.ENPOWERED_OBXIDIAN, EquipmentSlotType.CHEST,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_ARMORGROUP)));
+
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_LEGGINGS = ITEMS.register("enpowered_obxidian_leggings",
+            () -> new ArmorItem(ModArmorMaterial.ENPOWERED_OBXIDIAN, EquipmentSlotType.LEGS,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_ARMORGROUP)));
+
+    public static final RegistryObject<Item> ENPOWERED_OBXIDIAN_BOOTS = ITEMS.register("enpowered_obxidian_boots",
+            () -> new ArmorItem(ModArmorMaterial.ENPOWERED_OBXIDIAN, EquipmentSlotType.FEET,
+                    new Item.Properties().group(ModItemGroup.ORESPLUS_ARMORGROUP)));
+
     public static final RegistryObject<Item> MOLTEN_ALUMINIUM_BUCKET = ITEMS.register("molten_aluminium_bucket",
             () -> new BucketItem(() -> ModFluids.MOLTEN_ALUMINIUM_FLUID.get(),
                     new Item.Properties().group(ModItemGroup.ORESPLUS_GROUP)));
@@ -94,6 +132,11 @@ public class ModItems {
     public static final RegistryObject<Item> CORN = ITEMS.register("corn",
             () -> new BlockItem(ModBlocks.CORN.get(), new Item.Properties()
                     .food(new Food.Builder().hunger(1).saturation(0.1f).fastToEat().build())
+                    .group(ModItemGroup.ORESPLUS_FARMGROUP)));
+
+    public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
+            () -> new BlockItem(ModBlocks.TOMATO.get(), new Item.Properties()
+                    .food(new Food.Builder().hunger(2).saturation(0.2f).fastToEat().build())
                     .group(ModItemGroup.ORESPLUS_FARMGROUP)));
 
 

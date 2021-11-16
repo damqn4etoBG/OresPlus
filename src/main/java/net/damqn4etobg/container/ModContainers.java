@@ -31,6 +31,14 @@ public class ModContainers {
                 return new MegaFusionCrafterContainer(windowId, world, pos, inv, inv.player);
             })));
 
+    public static final RegistryObject<ContainerType<RadioactiveGeneratorContainer>> RADIOACTIVE_GENERATOR_CONTAINER
+            = CONTAINERS.register("radioactive_generator_container",
+            () -> IForgeContainerType.create(((windowId, inv, data) -> {
+                BlockPos pos = data.readBlockPos();
+                World world = inv.player.getEntityWorld();
+                return new RadioactiveGeneratorContainer(windowId, world, pos, inv, inv.player);
+            })));
+
 
     public static void register(IEventBus eventBus) {
         CONTAINERS.register(eventBus);

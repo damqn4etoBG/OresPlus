@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AGA",
+    "GEG",
+    "AGA"
+  ],
+  "key": {
+    "A": {
+      "item": "oresplus:aluminium_ingot"
+    },
+    "E": {
+      "item": "oresplus:enpowered_crystal_shard"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "oresplus:advanced_circuit_board",
+    "count": 1
+  }
+}

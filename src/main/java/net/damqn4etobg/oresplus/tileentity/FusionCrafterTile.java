@@ -95,6 +95,7 @@ public class FusionCrafterTile extends TileEntity {
     public void lightningHasStruck() {
         boolean hasFocusOnFirstSlot = this.itemHandler.getStackInSlot(0).getCount() > 0
                 && this.itemHandler.getStackInSlot(0).getItem() == Items.WATER_BUCKET;
+//                || this.itemHandler.getStackInSlot(0).getItem() == Items.ACACIA_BOAT;
         boolean hasAluminiumInThirdSlot = this.itemHandler.getStackInSlot(2).getCount() > 0
                 && this.itemHandler.getStackInSlot(2).getItem() == ModItems.ALUMINIUM_INGOT.get();
 

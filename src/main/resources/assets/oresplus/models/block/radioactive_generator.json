@@ -1,0 +1,8 @@
+{
+	"parent":  "minecraft:block/cube_column",
+	"textures": 
+	{
+		"end": "oresplus:blocks/radioactive_generator_end",
+		"side": "oresplus:blocks/radioactive_generator_side"
+	}
+}

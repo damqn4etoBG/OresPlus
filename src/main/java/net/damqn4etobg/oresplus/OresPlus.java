@@ -8,6 +8,7 @@ import net.damqn4etobg.oresplus.item.ModItems;
 import net.damqn4etobg.oresplus.tileentity.ModTileEntities;
 import net.damqn4etobg.screen.FusionCrafterScreen;
 import net.damqn4etobg.screen.MegaFusionCrafterScreen;
+import net.damqn4etobg.screen.RadioactiveGeneratorScreen;
 import net.damqn4etobg.world.biome.ModBiomes;
 import net.damqn4etobg.world.gen.ModBiomeGeneration;
 import net.minecraft.block.Block;
@@ -83,6 +84,8 @@ public class OresPlus
                 FusionCrafterScreen::new);
         ScreenManager.registerFactory(ModContainers.MEGA_FUSION_CRAFTER_CONTAINER.get(),
                 MegaFusionCrafterScreen::new);
+        ScreenManager.registerFactory(ModContainers.RADIOACTIVE_GENERATOR_CONTAINER.get(),
+                RadioactiveGeneratorScreen::new);
 
         RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_BLOCK.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(ModFluids.MOLTEN_ALUMINIUM_FLUID.get(), RenderType.getTranslucent());
@@ -92,6 +95,7 @@ public class OresPlus
         RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
 
         RenderTypeLookup.setRenderLayer(ModBlocks.CORN.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.TOMATO.get(), RenderType.getCutout());
 
 
     }

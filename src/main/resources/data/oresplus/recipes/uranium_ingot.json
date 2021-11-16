@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "oresplus:uranium_block"
+      }
+    ],
+    "result": {
+      "item": "oresplus:uranium_ingot",
+      "count": 9
+    }
+  }
+  

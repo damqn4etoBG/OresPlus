@@ -1,9 +1,7 @@
 package net.damqn4etobg.oresplus.block;
 
 import net.damqn4etobg.oresplus.OresPlus;
-import net.damqn4etobg.oresplus.block.custom.CornBlock;
-import net.damqn4etobg.oresplus.block.custom.FusionCrafterBlock;
-import net.damqn4etobg.oresplus.block.custom.MegaFusionCrafterBlock;
+import net.damqn4etobg.oresplus.block.custom.*;
 import net.damqn4etobg.oresplus.block.custom.trees.RedwoodTree;
 import net.damqn4etobg.oresplus.item.ModItemGroup;
 import net.damqn4etobg.oresplus.item.ModItems;
@@ -29,16 +27,41 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
     public static final RegistryObject<Block> ENPOWERED_CRYSTAL_ORE = registerBlock("enpowered_crystal_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(6f)));
+
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> URANIUM_ORE = registerBlock("uranium_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
+
+    public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
+
+    public static final RegistryObject<Block> IRON_CASING = registerBlock("iron_casing",
+            () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> COPPER_ORE = registerBlock("copper_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+
     public static final RegistryObject<Block> FUSION_CRAFTER = registerBlock("fusion_crafter",
             () -> new FusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
+
     public static final RegistryObject<Block> MEGA_FUSION_CRAFTER = registerBlock("mega_fusion_crafter",
             () -> new MegaFusionCrafterBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> RADIOACTIVE_GENERATOR = registerBlock("radioactive_generator",
+            () -> new RadioactiveGeneratorBlock(AbstractBlock.Properties.create(Material.IRON)));
+
     public static final RegistryObject<Block> PURPLE_FUNGUS = registerBlock("purple_fungus",
             () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
                     .harvestLevel(1).hardnessAndResistance(0.5f).sound(SoundType.HONEY)));
@@ -67,6 +90,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CORN = BLOCKS.register("corn_crop",
             () -> new CornBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> TOMATO = BLOCKS.register("tomato_crop",
+            () -> new TomatoBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
 
 

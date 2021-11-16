@@ -37,4 +37,11 @@ public class ModItemGroup {
         }
     };
 
+    public static final ItemGroup ORESPLUS_ENGINEERINGGROUP = new ItemGroup("oresplusengineeringgroup") {
+        @Override
+        public ItemStack createIcon()
+        {
+            return new ItemStack(ModItems.HAMMER.get());
+        }
+    };
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "E E",
+    "E E"
+  ],
+  "key": {
+    "E": {
+      "item": "oresplus:enpowered_obxidian_ingot"
+    }
+  },
+  "result": {
+    "item": "oresplus:enpowered_obxidian_leggings",
+    "count": 1
+  }
+}

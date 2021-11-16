@@ -17,8 +17,8 @@ public enum ModArmorMaterial implements IArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2f, 0f, () -> {
         return Ingredient.fromItems(ModItems.RUBY.get());
     }),
-    ENPOWERED_OBXIDIAN("enpowered_obxidian_ingot", 45, new int[] {4, 6, 8, 10}, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4f, 1f, () -> {
+    ENPOWERED_OBXIDIAN("enpowered_obxidian", 45, new int[] {8, 12, 16, 20}, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4f, 1f, () -> {
         return Ingredient.fromItems(ModItems.ENPOWERED_OBXIDIAN_INGOT.get());
     });
 
